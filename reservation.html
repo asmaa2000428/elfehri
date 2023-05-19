@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sweetalert2.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="banner">
+        <h2>BOOK YOUR TABLE NOW</h2>
+        <div class ="card-container">
+          <!--img here-->
+        </div>
+        <div class="card-content">
+            <h3>Reservation</h3>
+            <form>
+                <div class="form-row">
+                    <select name="days">
+                        <option value ="day-select">Select Day</option>
+                        <option value ="Monday">Monday</option>
+                        <option value ="Tuesday">Tuesday</option>
+                        <option value ="Wednesday">Wednesday</option>
+                        <option value ="Thursday">Thursday</option>
+                        <option value ="Friday">Friday</option>
+                        <option value ="Saturday">Saturday</option>
+                        <option value ="Sunday">Sunday</option>
+                    </select>
+                    <select name="hours">
+                        <option value ="hour-select">Select-Hours</option>
+                        <option value ="10">10:00</option>
+                        <option value ="10">11:00</option>
+                        <option value ="10">12:00</option>
+                        <option value ="10">13:00</option>
+                        <option value ="10">14:00</option>
+                        <option value ="10">15:00</option>
+                        <option value ="10">16:00</option>
+                        <option value ="10">19:00</option>
+                        <option value ="10">20:00</option>
+                        <option value ="10">21:00</option>
+                        <option value ="10">22:00</option>
+                        <option value ="10">23:00</option>
+                    </select>
+                </div>
+                <div class ="form-row">
+                    <input type ="text" id="Fullname" required placeholder="Full Name">
+                    <input type = "text" id="Phonenumber" required placeholder ="Phone Number"> 
+                </div>
+                <div class = "form-row">
+                    <input type ="number" id="Howmanypeople" required placeholder="How many people?" min ="1">
+                    <input type ="button" onclick="validation();" value="BOOK TABLE">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script >
+        function validation(){
+            var FullName =document.getElementById('Fullname').value;
+            var PhoneNumber= document.getElementById('Phonenumber').value;
+            var HowManypeople= document.getElementById('Howmanypeople').value;
+            if((FullName!=='')&&(PhoneNumber!=='')){
+                swal("Thank you","you success to login","success");
+            }
+            else{
+                sweetAlert("Oops...", "error");
+            }
+        }
+              
+    </script>
+</body>
+</html>

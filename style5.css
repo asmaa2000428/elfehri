@@ -1,0 +1,797 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'popping' , sans-serif ;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0,5s;
+
+}
+.logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+.logo span{
+    color: #fb911f;
+
+}
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    margin: 0 15px;
+    list-style: none;
+    
+}
+
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+.navbar li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+    text-decoration: none;
+}
+/*.lang-menu{
+    margin-top:25px;
+
+}
+.selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+}
+.selected-lang:before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://flagsapi.com/us/flat/32.png);
+}*/
+
+.btn-reservation{
+    padding: 10px 20px;
+    background:#fb911f;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.btn-reservation:hover{
+    background: #d87710;
+    transition: ease-out;
+
+}
+header .navbar li a:hover{
+    color: #fb911f;
+    border-bottom-width: 1px solid #fb911f;
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.tasteatlas.com/images/restaurants/5bc55f42ecc1435f8a60bfd48e85f37f.jpg?w=600);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration:30s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+    animation-timing-function:ease-in-out;
+}
+
+
+.banniere .contenu{
+    max-width:70%;
+    text-align: center;
+
+}
+.banniere .contenu h2{
+    color: #fff;
+    font-size: 3em;
+    text-decoration: capitalize;
+}
+.contenu p:nth-child(2){
+    color:#ffff;
+    font-size: 1.2em;
+
+}
+.btn1{
+    font-size: 1em;
+    color: #fff;
+    background: #fb911f;
+    padding:10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0,5s;
+    margin-left: 10px;
+
+}
+.btn2{
+    font-size: 1em;
+    color: #fff;
+    background: #2a4963;
+    padding:10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0,5s;
+    margin-left: 10px;
+    
+}
+.btn1:hover{
+    letter-spacing: 4px;
+
+}
+@keyframes animate{
+    0%{
+       background-image: url(https://www.paris-friendly.fr/images/bons_plans_paris/10452/livraison-repas-chef-cuisinier.jpg); 
+    }
+    20%
+    {
+        background-image: url(https://us.123rf.com/450wm/wavebreakmediamicro/wavebreakmediamicro1402/wavebreakmediamicro140210125/26744705-femme-chef-garnir-une-plaque-avec-un-steak-dans-la-cuisine-commerciale.jpg?ver=6);
+    }
+    40%
+    {
+        background-image: url(https://f.maformation.fr/edito/sites/3/2018/04/cuisinier.jpg);   
+    }
+    60%
+    {
+        background-image: url(https://www.club-sandwich.net/images/photoarticles/chef-domicile-raffinement-cuisine-istock.jpg);
+    }
+    80%
+    {
+        background-image: url(https://www.studyrama.com/sites/default/files/styles/hero/public/metier/2022-07/arton1008.png.webp?itok=JSpEZGeH);
+    }
+    100%
+    {
+        background-image: url(https://cdn.tasteatlas.com/images/restaurants/5bc55f42ecc1435f8a60bfd48e85f37f.jpg?w=600);
+    }
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+.titre-texte{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre-texte span{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.col50 span{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.row .col50 img{
+    height: 430px;
+    width: 350px;
+    position: relative;
+}
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    margin-top: -100px;
+}
+.menu span{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .contenu .box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
+}
+
+.menu .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.menu .contenu .box .text h3{
+    font-weight: 400;
+}
+.Expert{
+    margin-top:-100px;
+}
+.Expert span{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.Expert .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Expert .contenu .box{
+    width: 250px;
+    margin: 15px;
+}
+.Expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.Expert .contenu .box h3{
+    color: #111;
+    font-weight: 400;
+    text-align: center;
+}
+.temoignage{
+    background-image: url(https://img.freepik.com/photos-gratuite/vue-dessus-repas-legumes-cuits-viande-poivrons-tranches-interieur-poele-surface-bois-marron_140725-62114.jpg?w=2000);
+    background-size: cover;
+}
+
+.temoignage .contenu{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.temoignage .contenu .box{
+    width: 340px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.temoignage .contenu .box .imbox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.temoignage .contenu .box .imbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.temoignage .contenu .box .text{
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.temoignage .contenu .box .text h3{
+    color: #fb911f;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.blanc .titre-texte{
+    color: #fff;
+}
+.blanc .titre-texte,
+.blanc p{
+    color: #fff;
+}
+.contact{
+    background-image: url("img-form.jpg");
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+.contact p{
+    color:#0c0b0b;
+}
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0,0,0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffff;
+    background: #fb911f;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.contact .titre-text{
+    color:#fff;
+}
+.contact .titre-text span{
+    color: #fb911f;
+    font-size: 2em;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
+}
+
+header.sticky .logo{
+    color: #000;
+}
+
+header.sticky .navbar li a {
+    color: #000;
+}
+
+header.sticky li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+}
+
+@media (max-width: 991px) {
+header, 
+header.sticky{
+    padding: 10px 20px;
+}
+
+header .navbar li{
+    margin-left: 0px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.navbar{
+    display: none;
+}
+section{
+    padding: 20px;
+}
+
+header .navbar.active{
+    width: 100%;
+    height: calc(100% -68px);
+    position: fixed;
+    top: 68px;
+    left:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffff;
+    align-items: center;
+}
+
+.menuToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(./images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: 30px;
+}
+
+.menuToggle.active
+{
+    background-image: url(./images/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-origin: center;
+}
+
+header.sticky .menuToggle{
+    filter: invert(1);
+}
+
+
+.banniere .contenu h2{
+    font-size: 2em;
+}
+
+.row .col50 img{
+    margin-left: 18%;
+}
+
+.contenu p:nth-child(2){
+    font-size: 1.2em;
+}
+.expert{
+    margin-top: 0px;
+}
+
+.menu{
+    margin-top: 0px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.temoignage h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+.temoignage p{
+text-align: center;
+}
+
+.contactform{
+    margin-left: 25%;
+}
+
+
+    .row .col50 {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    
+    }
+
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .banniere .contenu h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+
+    .titre-text{
+        color: #000;
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
+    .temoignage h2 
+    {
+        font-size: 1.1em;
+    }
+
+    .temoignage p{
+        text-align: center;
+    }
+    .Expert span{
+        color: #fb911f;
+        font-size: 1.5em;
+        font-weight: 700px;
+    }
+    .gps{
+        background-color: #555;
+    }
+    .main{ 
+       margin:0;
+       padding:0;
+       box-sizing: border-box;
+       font-family:'poppins', sans-serif;
+
+    }
+    .main .wrapper{
+         width:100%;
+         height: 100vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: rgb(240,240,240);
+
+    }
+    .main .wrapper .icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background: #fff;
+        margin: 20px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 100px;
+        font-family: sans-serif;
+        overflow: hidden;
+        box-shadow: 5px 10px 20px rgba(150,150,150,.3);
+    }
+}
+
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #32364e, #491301);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+   
+}
+.foot{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.feet{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.feet:nth-child(2), col:nth-child(3){
+    flex-basis: 15%;
+}
+.logosat{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+.logosat span{
+color: #fb911f;
+
+}
+.feet h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom:50px;
+}
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width:100%;
+    background:transparent ;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+ form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+ }
+ form button .fa-solid{
+    font-size: 16px;
+    color: #ccc;
+
+ }
+ .social-icons .fa-brands{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+
+ }
+hr{
+    width:90%;
+    border:0;
+    border-bottom:1px solid #ccc;
+    margin: 20px;
+}
+.copyright{
+    text-align: center;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius:3px;
+    position:absolute;
+    top: 25px;
+    left: 0;
+    overflow:hidden;
+}
+.underline span{
+    width:15px;
+    height:100%;
+    background:#fff;
+    border-radius:3px;
+    position: absolute;
+    top: 0;
+    left:10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+       left:-20px;
+    }
+    100%{
+        left:100%;
+    }
+}
+@media(max-width:700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+        
+    }
+    .col:nth-child(2), col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
